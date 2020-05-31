@@ -1,0 +1,19 @@
+# Book settings
+title: My sample book
+author: The Jupyter Book Community
+logo: logo.png
+
+latex:
+  latex_documents:
+    targetname: book.tex
+
+launch_buttons:
+  thebelab: true
+
+repository:
+  url                         : https://github.com/cedeerwe/test_book
+  path_to_book                : "test-book"
+
+binder:
+  binderhub_url               : "https://mybinder.org"
+  text                        : "Launch binder"
