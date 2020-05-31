@@ -4,3 +4,13 @@
     - file: markdown
     - file: notebooks
 - file: syntax
+
+- header: Suboj minci
+- file: suboj_minci/uloha1
+  sections:
+    - file: suboj_minci/uloha1_napovedy
+    - file: suboj_minci/uloha1_riesenia
+      sections:
+        - file: suboj_minci/uloha1_odhad
+        - file: suboj_minci/uloha1_simulacia
+        - file: suboj_minci/uloha1_matematika
