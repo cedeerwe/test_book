@@ -8,13 +8,10 @@ latex:
     targetname: book.tex
 
 launch_buttons:
-  thebelab: true
+  notebook_interface        : "jupyterlab"  # The interface interactive links will activate ["classic", "jupyterlab"]
+  binderhub_url             : "https://mybinder.org"
+  thebelab                  : true
 
 repository:
   url                         : https://github.com/cedeerwe/test_book
   path_to_book                : "test-book"
-
-binder:
-  notebook_interface          : "jupyterlab"
-  binderhub_url               : "https://mybinder.org"
-  text                        : "Launch binder"
