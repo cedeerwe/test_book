@@ -15,5 +15,6 @@ repository:
   path_to_book                : "test-book"
 
 binder:
+  notebook_interface          : "jupyterlab"
   binderhub_url               : "https://mybinder.org"
   text                        : "Launch binder"
