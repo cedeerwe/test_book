@@ -3,6 +3,8 @@ jupytext:
   text_representation:
     extension: .md
     format_name: myst
+    format_version: '0.8'
+    jupytext_version: '1.4.1'
 kernelspec:
   display_name: Python 3
   language: python
@@ -36,25 +38,6 @@ a = np.linspace(-np.pi, np.pi, 100)    # Create even grid from -π to π
 b = np.cos(a)                          # Apply cosine to each element of a
 c = np.sin(a)                          # Apply sin to each element of a
 c
-```
-
-```{code-cell} ipython3
-from ipywidgets import interactive
-import matplotlib.pyplot as plt
-import numpy as np
-
-def f(m, b):
-    plt.figure(2)
-    x = np.linspace(-10, 10, num=1000)
-    plt.plot(x, m * x + b)
-    plt.ylim(-5, 5)
-    plt.show()
-
-interactive_plot = interactive(f, m=(-2.0, 2.0), b=(-3, 3, 0.5))
-output = interactive_plot.children[-1]
-output.layout.height = '350px'
-interactive_plot
-
 ```
 
 ```{code-cell} ipython3
