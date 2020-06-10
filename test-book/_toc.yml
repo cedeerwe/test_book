@@ -14,3 +14,14 @@
         - file: suboj_minci/uloha1_odhad
         - file: suboj_minci/uloha1_simulacia
         - file: suboj_minci/uloha1_matematika
+
+- header: Praktická matematika
+- file: prakticka_matematika/01_uvod
+  sections:
+    - file: prakticka_matematika/02_konstruktivizmus
+      sections:
+        - file: prakticka_matematika/02a_konstruktivizmus
+        - file: prakticka_matematika/02b_konstruktivizmus
+        - file: prakticka_matematika/02bb_konstruktivizmus
+        - file: prakticka_matematika/02c_konstruktivizmus
+    - file: prakticka_matematika/03_forma
