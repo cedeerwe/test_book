@@ -18,4 +18,4 @@ Môžete si povedať, že podobné témy ste už videli do podrobna rozobraté v
 
 A máte pravdu. Nie je naším cieľom vysvetliť tieto témy lepšie, ako to robia tieto veľmi populárne zdroje. V skutočnosti, my vám nechceme skoro nič vysvetlovať. Naším cieľom je viesť a pomáhať vám pri tom, ako si riešenia na všetky tieto úlohy vymyslíte sami.
 
-Tento prístup má dlhú históriu a názyva sa **konštruktivizmus**.
+Tento prístup má dlhú históriu a odborne sa názyva **konštruktivizmus**. Posvietime si naň bližšie v nasledujúcej časti.
