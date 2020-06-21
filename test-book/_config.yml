@@ -15,3 +15,11 @@ launch_buttons:
 repository:
   url                         : https://github.com/cedeerwe/test_book
   path_to_book                : "test-book"
+
+sphinx:
+  config:
+    mathjax_config:
+      TeX:
+        Macros:
+          "N": "\\mathbb{N}"
+          "qq": ["\\quad#1\\quad", 1]

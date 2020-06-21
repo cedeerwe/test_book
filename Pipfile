@@ -10,6 +10,7 @@ jupyter-book = "*"
 numpy = "*"
 plotly = "*"
 graphviz = "*"
+jupytext = "*"
 
 [requires]
 python_version = "3.6"

@@ -25,3 +25,18 @@
         - file: prakticka_matematika/02bb_konstruktivizmus
         - file: prakticka_matematika/02c_konstruktivizmus
     - file: prakticka_matematika/03_forma
+
+- file: uvod/01_uvod
+  sections:
+    - file: uvod/02_didakticke_okienko
+
+- header: Ypsilon
+- file: hazard/01_uvod
+  sections:
+    - file: hazard/02_sestka
+    - file: hazard/02_sestka2
+    - file: hazard/02_sestka3
+
+- file: python/01_uvod
+  sections:
+    - file: python/generatory
