@@ -25,12 +25,13 @@
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/mystnb.js"></script>
     <script src="../_static/sphinx-book-theme.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .secondtoggle, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script async="async" src="../_static/thebelab.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"N": "\\mathbb{N}", "qq": ["\\quad#1\\quad", 1]}}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Forma materiálov" href="03_forma.html" />
@@ -112,6 +113,18 @@
     </li>
   </ul>
   </li>
+  <li class="">
+    <a href="../uvod/01_uvod.html">Úvod</a>
+  </li>
+<li class="navbar-special">
+<p class="margin-caption">Ypsilon</p>
+</li>
+  <li class="">
+    <a href="../hazard/01_uvod.html">Yzidor</a>
+  </li>
+  <li class="">
+    <a href="../python/01_uvod.html">Python</a>
+  </li>
 </ul>
 </nav>
 
@@ -135,32 +148,41 @@
     </div>
     <div class="col pl-2 topbar-main">
         
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse" data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu" aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation" title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
             <i class="fas fa-bars"></i>
             <i class="fas fa-arrow-left"></i>
             <i class="fas fa-arrow-up"></i>
         </button>
         
         <div class="dropdown-buttons-trigger">
-            <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i class="fas fa-download"></i></button>
+            <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+                    class="fas fa-download"></i></button>
 
             
             <div class="dropdown-buttons">
                 <!-- ipynb file if we had a myst markdown file -->
                 
                 <!-- Download raw file -->
-                <a class="dropdown-buttons" href="../_sources/prakticka_matematika/02c_konstruktivizmus.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <a class="dropdown-buttons" href="../_sources/prakticka_matematika/02c_konstruktivizmus.md"><button type="button"
+                        class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                        data-placement="left">.md</button></a>
                 <!-- Download PDF via print -->
-                <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                    onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
             </div>
             
         </div>
 
-        <!-- Edit this page -->
+        <!-- Source interaction buttons -->
         
 
         <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i class="fas fa-expand"></i></button></a>
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
         
@@ -186,6 +208,7 @@
 <p>Odpoveď na túto otázku je v princípe jednoduchá a pozostáva z dvoch častí.</p>
 <p>Pasívne prijímanie informácií charakteristické pre transmisívnu formu výučby je jednoducho pohodlnejšie. V konštruktivizme nám nikto nedá na tanieri riešenie, v transmisívnom sa ho dočkáme. Každý z nás si mnohokrát pustil nejaké zaujímavé video, keď sa už nevládal aktívne vzdelávať. Ak sa niekto rozhodne spraviť nejaký zaujímavý materiál, väčšinou bude transmisívny, pretože má omnoho väčšie publikum. Každý si rád vypočuje nejakú zaujímavosť, málokto má vôľu si tú zaujímavosť sám vymyslieť, aj keď je na ňu navádzaný. Je to teda začarovaný kruh, kde väčšina ľudí radšej počúva a preto väčšina materiálov je na počúvanie zameraná.</p>
 <p>Vytvoriť transmisívne materiály je jednoduchšie ako pripraviť konštruktivistické. Na prvé zamyslenie to nedáva zmysel, veď v konštruktivistickom vzdelávaní si študenti veci výmýšľajú sami, čo im treba pripravovať? Predstavte si, že chcete, aby študenti objavili Pytagorovu vetu. Ako ich k tomu dostanete? Musíte vymyslieť sériu úloh, po ktorej si povedia, že “Aha, veď <span class="math notranslate nohighlight">\(a^2 + b^2 = c^2.\)</span>” alebo niečo podobné. Skúste si to sami. Vymyslite sériu úloh, po ktorej žiak sám sformuluje Pytagorovu vetu. Nie je to vôbec jednoduché. Kým transmisívnemu učiteľovi stačí povedať, že platí Pytagorova veta a na týchto príkladoch z učebnice si ju vyskúšame, konštruktivistického učiteľa čaká omnoho ťažší údel.</p>
+<p>HISTORICKY</p>
 <p>Aby sme to teda zhrnuli, konštruktivizmus je z pohľadu pohodlnosti náročnejší aj pre študentov a aj pre učiteľov. Preto nie je viac rozšírený. Na druhej strane, študenti počas konštruktivistickej výúčby často zažívajú viac zábavy, menej stresu, viac diskutujú, viac objavujú, viac sa hrajú. Pre učiteľa je tiež väčšia radosť s takýmito študentami pracovať. Príprava teda môže byť náročnejšia, ale samotná výučba je pre obe strany často príjemnejším zážitkom.</p>
 <p>My sme sa rozhodli, že vám pripravíme materiály o praktickej matematike konštruktivistickým spôsobom. Čo to pre vás bude znamenať? Čo to bude znamenať z pohľadu materiálov, ktoré vás čakajú?</p>
 </div>
@@ -195,7 +218,7 @@
         requestKernel: true,
         binderOptions: {
             repo: "cedeerwe/test_book",
-            ref: "master",
+            ref: "",
         },
         codeMirrorConfig: {
             theme: "abcdef",

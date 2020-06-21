@@ -25,12 +25,13 @@
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/mystnb.js"></script>
     <script src="../_static/sphinx-book-theme.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .secondtoggle, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script async="async" src="../_static/thebelab.js"></script>
     <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"N": "\\mathbb{N}", "qq": ["\\quad#1\\quad", 1]}}})</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Transmisívne a konštruktivistické momenty" href="02a_konstruktivizmus.html" />
@@ -112,6 +113,18 @@
     </li>
   </ul>
   </li>
+  <li class="">
+    <a href="../uvod/01_uvod.html">Úvod</a>
+  </li>
+<li class="navbar-special">
+<p class="margin-caption">Ypsilon</p>
+</li>
+  <li class="">
+    <a href="../hazard/01_uvod.html">Yzidor</a>
+  </li>
+  <li class="">
+    <a href="../python/01_uvod.html">Python</a>
+  </li>
 </ul>
 </nav>
 
@@ -135,32 +148,41 @@
     </div>
     <div class="col pl-2 topbar-main">
         
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse" data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu" aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation" title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
             <i class="fas fa-bars"></i>
             <i class="fas fa-arrow-left"></i>
             <i class="fas fa-arrow-up"></i>
         </button>
         
         <div class="dropdown-buttons-trigger">
-            <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i class="fas fa-download"></i></button>
+            <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+                    class="fas fa-download"></i></button>
 
             
             <div class="dropdown-buttons">
                 <!-- ipynb file if we had a myst markdown file -->
                 
                 <!-- Download raw file -->
-                <a class="dropdown-buttons" href="../_sources/prakticka_matematika/02_konstruktivizmus.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <a class="dropdown-buttons" href="../_sources/prakticka_matematika/02_konstruktivizmus.md"><button type="button"
+                        class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                        data-placement="left">.md</button></a>
                 <!-- Download PDF via print -->
-                <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                    onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
             </div>
             
         </div>
 
-        <!-- Edit this page -->
+        <!-- Source interaction buttons -->
         
 
         <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i class="fas fa-expand"></i></button></a>
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
         
@@ -190,7 +212,7 @@
                 
   <div class="section" id="konstruktivizmus">
 <h1>Konštruktivizmus<a class="headerlink" href="#konstruktivizmus" title="Permalink to this headline">¶</a></h1>
-<p>Aby sme lepšie pochopili, o čo sa tu budeme snažiť, spravíme si krátke <em>didaktické</em> okienko.</p>
+<p>Aby sme lepšie pochopili, o čo sa tu budeme snažiť, spravíme si krátke <em>didaktické</em> okienko. Poďte sa s nami zamyslieť nad nasledujúcou situáciou.</p>
 <div class="margin sidebar">
 <p class="sidebar-title"></p>
 <div class="admonition-didaktika admonition">
@@ -198,10 +220,7 @@
 <p>Slovo didaktika má pôvod v starogréckom slove <em>didasko</em>, ktoré znamená <strong>učím, vyučujem</strong>. Ide o vedu zaoberajúcu sa učením.</p>
 </div>
 </div>
-<p>Väčšina z vás sa stretla s vyučovaním v podobe, ktoré sa nazýva <em>transmisívne</em>. Ako už názov napovedá (<em>transmission = prenos</em>), ide o druh vyučovania, kde vám učiteľ predáva svoje vedomosti a vy ich nasávate. Štandardne stojí učiteľ pred tabuľou, vysvetľuje novú látku, žiaci si zapisujú poznámky a na záver sa testuje, kto si ako dobre zapamätal nadobudnuté vedomosti. Vo vyučovaní tohto typu je aktívny vysvetľujúci učiteľ, kým žiak iba pasívne informácie získava.</p>
-<p>Na druhej strane máme takzvaný <em>konštruktivizmus</em>, ktorý sme načrtli už v prechádzajúcej časti. Ide o druh vyučovania, kedy je aktívny žiak objavujúci nové znalosti a učiteľ hrá iba pasívnu podpornú rolu. Väčšinu času žiaci strávia experimentovaním a diskusiami najčastejšie v skupinách. Učiteľ sa prechádza po triede, motivuje žiakov a odpovedá na prípadne otázky. Snahou je, aby učiteľ neodpovedal na otázky priamo, ale skôr poradil, ako sa na odpoveď dá prísť. V triedach, kde sú zvyknutí na konštruktivistické vyučovanie zohrávajú často rolu učiteľa aj žiaci samotní, ktorí si odpovedaním na otázky a rozdávaním nápovied upevňujú svoje pochopenie látky. Každý si ide vlastným tempom a málokedy sa známkuje. Cieľom totiž nie je získať dobrú známku, ale tešiť sa z učenia a spoločne napredovať.</p>
-<p>Jednoducho povedané, transmisívna výučba sa sústredí na predávanie vedomostí z učiteľa na žiaka, kým konštruktivistická výučba sa sústredí na objavenie vedomostí samotným žiakom.</p>
-<p>Na prvý pohľad znie konštruktivizmus ako výrazne príjemnejší smer vyučovania ako to, na čo sme zvyknutí zo škôl. Minimálne sme sa ho snažili opísať tak, aby znel super. Máme ho totiž radi.</p>
+<p>Našli ste si na internete alebo v kuchárskej knižke recept na nejaký skvelý šmak a rozhodli ste sa ho ukuchtiť. Recept bol veľmi priamočiary, nasledovali ste kroky a na záver ste mali pred sebou lahodu ako z reštaurácie. Nemuseli ste o varení skoro nič vedieť, aby ste vedeli seba a svoje okolie potešiť gurmánskym zážitkom. Tak sa vám to páčilo, až ste sa rozhodli, že to zopakujete. Našli ste si ďalší recept</p>
 <div class="section" id="otazky-na-zamyslenie-kde-je-hacik">
 <h2>Otázky na zamyslenie: kde je háčik?<a class="headerlink" href="#otazky-na-zamyslenie-kde-je-hacik" title="Permalink to this headline">¶</a></h2>
 <p>Skúste sa zamyslieť nad nasledujúcimi otázkami (ktoré vás možno napadli aj bez toho, aby sme ich napísali)</p>
@@ -222,7 +241,7 @@
         requestKernel: true,
         binderOptions: {
             repo: "cedeerwe/test_book",
-            ref: "master",
+            ref: "",
         },
         codeMirrorConfig: {
             theme: "abcdef",
